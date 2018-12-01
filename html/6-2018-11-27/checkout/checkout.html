@@ -1,0 +1,192 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <div class="container-fluid bg-light pb-5">
+        <div class="row">
+            <div class="col-10 offset-1 mt-5 mx-auto text-center">
+            <img src="../bootstrap-solid.svg" height="70" width="70" class="mb-4">
+            <b><h2>Checkout form</h2></b>
+            <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-5  offset-2">
+                <h4 class="mb-2" style="padding: 0%"><b>Billing address</b></h4>
+                <div class="d-flex mt-2 justify-content-between" style="padding: 0%">
+                    <div class="row col-6">
+                        <label for="First name">First name</label>
+                        <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <div class="form-row col-6 offset-2">   
+                        <label for="Last name">Last name</label>
+                        <input type="text" class="form-control" id="lastname">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="Username">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="Email" class="d-flex">Email <div class="ml-1 text-muted"> (Optional)</div></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="d-flex">Address 2 <div class="ml-1 text-muted">(Optional)</div></label>
+                    <input type="text" class="form-control" id="address" placeholder="Apartment or suite">
+                </div>
+                <div class="pb-4 d-flex justify-content-between border-bottom">
+                    <div class="col-5" style="padding:0px">
+                        <label for="country">Country</label>
+                        <select class="custom-select" id="country" required>
+                            <option value>Choose...</option>
+                            <option>Việt Nam</option>
+                        </select>
+                    </div>
+                    <div class="col-3 offset">
+                        <label for="state">State</label>
+                        <select class="custom-select" id="state" required>
+                            <option value>Choose...</option>
+                            <option>Đà Nẵng</option>
+                        </select>
+                    </div>
+                    <div class="col-2" style="padding: 0%">
+                        <label for="zip">Zip</label>
+                        <input type="text" class="form-control" id="zip" placeholder required>
+                    </div>
+                </div>
+                <div class="py-4 border-bottom">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="same-address">
+                        <label class="custom-control-label" for="same-address">
+                            Shipping address is the same as my billing address
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="same-address">
+                        <label class="custom-control-label" for="same-address">
+                            Save this information for next time
+                        </label>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <h3><b>Payment</b></h3>
+                    <div class="my-3 ">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentmethod" type="radio" class="custom-control-input" checked required>
+                            <label class="custom-control-label" for="credit">
+                                Credit card
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                                <input id="debit" name="paymentmethod" type="radio" class="custom-control-input" checked required>
+                                <label class="custom-control-label" for="debit">
+                                    Debit card
+                                </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                                <input id="paypal" name="paymentmethod" type="radio" class="custom-control-input" checked required>
+                                <label class="custom-control-label" for="paypal">
+                                    Paypal
+                                </label>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-lg-between">
+                        <div class="col-5">
+                        <label for="cardname">Name on card</label>
+                        <input type="text" id="cardname" class="form-control">
+                        <small class="text-muted">Full name as displayed on card</small>
+                        </div>
+                        <div class="col-5">
+                        <label for="cardnumber">Credit card number</label>
+                        <input type="text" id="cardnumber" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row d-flex py-3">
+                        <div class="col-3">
+                        <label for="expiration">Expiration</label>
+                        <input class="form-control" id="expiration" type="text">
+                        </div>
+                        <div class="col-3 offset-1">
+                            <label for="vcc">VCC</label>
+                            <input class="form-control" type="text" id="vcc">
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 0%" class="col-12 border-top mt-4  ">
+                    <button class="btn btn-lg btn-block btn-primary mt-4" type="submit">Continue to checkout</button>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="d-flex justify-content-between align-content-center mb-3">
+                    <h4 class="text-muted">Your cart</h4>
+                    <h4 class="badge-secondary badge-pill">3</h4>
+                </div>
+                <ul class="list-group bg-white border rounded">
+                    <li class="p-3 border-bottom d-flex justify-content-between">
+                    <div class="align-items-center">
+                        <h6>Product name</h6>
+                        <small class="text-muted">Brief description</small>
+                    </div>
+                    <div class="align-items-center">
+                        <span class="text-muted">$12</span>
+                    </div>
+                    </li>
+                    <li class="p-3 d-flex justify-content-between border-bottom align-items-center">
+                    <div class="align-items-center">
+                        <h6>Second product</h6>
+                        <small class="text-muted">Brief description</small>
+                    </div>
+                    <div class="align-items-center">
+                            <span class="text-muted">$8</span>
+                    </div>
+                    </li>
+                    </li>
+                    <li class="d-flex p-3 justify-content-between border-bottom align-items-center">
+                    <div class="align-items-center">
+                        <h6>Third item</h6>
+                        <small class="text-muted">Brief description</small>
+                    </div>
+                    <div class="align-items-center">
+                            <span class="text-muted">$5</span>
+                    </div>
+                    </li>
+                    </li>
+                    <li class="text-success p-3 d-flex justify-content-between border-bottom align-items-center">
+                    <div class="align-items-center">
+                        <h6>Promo code</h6>
+                        <small>EXAMPLECODE</small>
+                    </div>
+                    <div class="align-items-center">
+                            <span class="text-muted">$5</span>
+                    </div>
+                    </li>
+                    </li>
+                    <li class="p-3 d-flex justify-content-between align-items-center">
+                        <h6>TOTAL (USD)</h6>
+                        <h6><b>$20</b></h6>
+                    </li>
+                </ul>
+            </div>
+            <div class="container pt-5">
+                    <div class="text-muted text-center">© 2017-2018 Company Name</div><br>
+                    <div class="col-4 d-flex offset-4 justify-content-around">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Support</a>
+                    </div>
+            </div>
+        </div>
+</body>
+</html>
