@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+        <img src="https://www.w3schools.com/js/pic_bulboff.gif" id="myImage" style="width: 100">
+        <button class="btn-lg btn-block"
+        onclick="switch_light()">Light <p id="p1">off </p> click to <p id="p2">on </p></button>
+        <script>
+            var index = 0;
+            function switch_light(){
+                if (index == 0){
+                document.getElementById('p1').innerHTML = "on";
+                document.getElementById('p2').innerHTML = "off";
+                document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'
+                index = index + 1;
+                }
+                else{
+                document.getElementById('p1').innerHTML = "off";
+                document.getElementById('p2').innerHTML = "on";
+                document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'
+                index = index - 1;
+                }
+            }
+        </script>
+        
+</body>
+</html>

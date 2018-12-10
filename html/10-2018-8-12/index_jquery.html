@@ -1,0 +1,27 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" id="myImage" style="width: 100">
+    <button class="btn-lg btn-block"
+    onclick="switch_light()">Light <p id="p1">off </p> click to <p id="p2">on </p></button>
+    <script>
+        var index = 0;
+            function switch_light(){
+                if (index==0) {
+                    $("#p1").text("on");
+                    $("#p2").text("off");
+                    $("#myImage").attr("src","https://www.w3schools.com/js/pic_bulbon.gif");
+                    index = index + 1;
+                } else {
+                    $("#p1").text("off");
+                    $("#p2").text("oon");
+                    $("#myImage").attr("src","https://www.w3schools.com/js/pic_bulboff.gif");
+                    index = index -1;
+                }
+            }
+    </script>
+</body>
+</html>
